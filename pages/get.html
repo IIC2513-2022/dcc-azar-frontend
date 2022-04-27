@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../styles/index.css">
+        <title>GET</title>
+    </head>
+<body>
+
+    <h1>Get</h1>
+
+    <div class="container">
+
+        <div class="column column-get">
+            <h2>Todos los usuarios</h2>
+            <div>
+                <button class="botonPost" type="button" onclick="obtenerUsuarios();">
+                <span>Obtener Usuarios</span>
+                </button>
+             </div>
+            <div>
+                <h3>Respuesta:</h3>
+                <div id="respuestaUsuarios"></div>
+            </div> 
+        </div>
+
+        <div class="column column-get">
+            <h2>Un usuario</h2>
+            <div>
+                Ingresar id del usuario:
+                <input type="text" id="usuario" class="inputcorto"> <br><br><br>
+                <button class="botonPost" type="button" onclick="obtenerUsuario();">
+                    <span>Obtener Usuario</span>
+                </button>
+            </div>
+
+        <div>
+            <h3>Respuesta:</h3>
+            <div id="respuestaUsuario"></div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br>
+    <a href="./api.html">
+        <button class="botonPost">
+          <span>volver</span>
+        </button>
+    </a>
+
+</body>
+
+<script src="../scripts/get.js"></script>
+
+</html>
