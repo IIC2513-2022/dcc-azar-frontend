@@ -18,7 +18,6 @@ async function obtenerUsuarios(){
 async function obtenerUsuario(){
     // Selecting the input element and get its value 
     var id = document.getElementById("usuario").value;
-    console.log(id);
     document.getElementById("usuario").value = ""
     const responseOne = await fetch(`http://localhost:3000/users/${id}`, {
         method: "GET"})
