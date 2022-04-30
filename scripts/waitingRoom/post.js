@@ -1,6 +1,6 @@
-window.onload = code => {
+window.onload = () => {
   var fname = document.getElementById("fname");
-  var creator = getUsers();
+  getUsers();
   var newButton = document.getElementById("newWaitingRoom");
   newButton.addEventListener('click', sendNewWaitingRoom);
 }
@@ -17,6 +17,7 @@ async function getUsers() {
   return select;
 }
 async function sendNewWaitingRoom() {
+  var creator = document.getElementById("users");
   datos = {
     name: fname.value,
     creatorId: creator.value,
@@ -30,10 +31,7 @@ async function sendNewWaitingRoom() {
   }).then(res => {
       if (res.status == 201) {
         fname.value = "";
-        lname.value = "";
-        username.value = "";
-        age.value = "";
-        password.value = "";
+        creator.value = "";
       }
       return res.json()
   })
