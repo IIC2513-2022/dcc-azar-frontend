@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Waiting Room (recharged with DOM)</title>
+        <link rel="stylesheet" href="../styles/newWaitingRoom.css">
+    </head>
+<body>
+    <h1>Registered Users</h1>
+    <div class="allusers-container" id="users-content"></div>
+
+    <template id="template-user">
+        <div class="user-card" draggable="true">
+            <img src="../assets/carrot.jpeg" draggable="false"/>
+            <h4>Username</h4>
+        </div>
+    </template>
+
+    <h1>WaitRoom</h1>
+    <div class="waitingusers-container" id="waiting-content"></div>
+
+    <template id="template-waiting">
+        <div class="waiting-card" id="waiting-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="../assets/no_user.png" draggable="false"/>
+            <h4>Espacio libre...</h4>
+
+            <button class="btn-remove" onclick="removeFromRoom(event)" disabled>Remover</button>
+        </div>
+    </template>
+    
+
+
+    <div class="user-space" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+
+<script src="../scripts/newWaitingRoom.js"></script>
+
+</html>
