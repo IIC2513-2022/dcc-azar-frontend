@@ -1,0 +1,50 @@
+.espacio-usuarios {
+    padding: 10px 30px;
+}
+
+.allusers-container{
+    display: flex;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 4px 8px;
+    width: 200px;
+    height: 110px;
+    background-color: orange;
+    border-radius: 5%;
+    text-align: center;
+}
+.user-card h4{
+    margin-top: 10px;
+}
+.waiting-card h4{
+    margin-right: 250px;
+}
+
+.waiting-card {
+    display: flex;
+    margin: 10px;
+    padding: 20px 20px;
+    width: 600px;
+    height: 105px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.waiting-card img{
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    border: 1px solid black;
+}
+
+.user-card img{
+    height: 60%;
+    border-radius: 5%;
+    margin-top: 5px;
+}
