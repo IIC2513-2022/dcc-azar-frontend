@@ -67,6 +67,9 @@ export default function NewUser() {
       <label>
         Creator:
         <select onChange={(event) => setCreatorId(event.target.value)}>
+          <option value={null} disabled>
+            Selecciona un usuario
+          </option>
           {users.map((user) => (
             <option value={user.id}>{user.username}</option>
           ))}

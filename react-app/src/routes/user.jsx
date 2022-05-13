@@ -24,10 +24,13 @@ export default function User() {
   const params = useParams();
   const config = {
     method: "get",
-    url: `${process.env.REACT_APP_API_URL}/${parseInt(params.userId, 10)}`,
+    url: `${process.env.REACT_APP_API_URL}/users/${parseInt(
+      params.userId,
+      10
+    )}`,
     headers: {},
   };
-
+  console.log(config);
   useEffect(() => {
     axios(config)
       .then(function (response) {
