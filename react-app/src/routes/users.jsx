@@ -19,7 +19,6 @@ export default function Users() {
         console.log(error);
       });
   }, [location.state]);
-  console.log();
 
   return (
     <div style={{ display: "flex" }}>

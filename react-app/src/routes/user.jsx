@@ -30,7 +30,6 @@ export default function User() {
     )}`,
     headers: {},
   };
-  console.log(config);
   useEffect(() => {
     axios(config)
       .then(function (response) {
