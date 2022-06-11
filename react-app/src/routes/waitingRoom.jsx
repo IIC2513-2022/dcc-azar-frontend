@@ -13,7 +13,6 @@ export default function WaitingRoom() {
     )}`,
     headers: {},
   };
-
   useEffect(() => {
     axios(config)
       .then(function (response) {
@@ -22,6 +21,7 @@ export default function WaitingRoom() {
       .catch(function (error) {
         console.log(error);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.waitingRoomId]);
 
   return (

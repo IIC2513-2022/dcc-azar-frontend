@@ -38,6 +38,7 @@ export default function User() {
       .catch(function (error) {
         console.log(error);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.userId]);
 
   return (

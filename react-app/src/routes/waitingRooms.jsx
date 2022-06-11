@@ -10,6 +10,7 @@ export default function WaitingRooms() {
     url: `${process.env.REACT_APP_API_URL}/waitingRooms`,
     headers: {},
   };
+  
   useEffect(() => {
     axios(config)
       .then(function (response) {
@@ -18,6 +19,7 @@ export default function WaitingRooms() {
       .catch(function (error) {
         console.log(error);
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.state]);
   return (
     <div style={{ display: "flex" }}>
